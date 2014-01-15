@@ -347,3 +347,6 @@ Replaces default behaviour of comment-dwim, when it inserts comment at the end o
   (message "%d line%s copied" arg (if (= 1 arg) "" "s")))
  
 (global-set-key (kbd "M-k") 'qiang-copy-line)
+
+//auto open files that are opened last time;
+(desktop-save-mode 1)
