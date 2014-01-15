@@ -348,5 +348,5 @@ Replaces default behaviour of comment-dwim, when it inserts comment at the end o
  
 (global-set-key (kbd "M-k") 'qiang-copy-line)
 
-//auto open files that are opened last time;
+;;auto open files that are opened last time;
 (desktop-save-mode 1)
