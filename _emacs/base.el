@@ -348,5 +348,28 @@ Replaces default behaviour of comment-dwim, when it inserts comment at the end o
  
 (global-set-key (kbd "M-k") 'qiang-copy-line)
 
+(setq scroll-step 1
+scroll-margin 3
+scroll-conservatively 10000)
+
+
+;;switch between cpp and h
+;;(load-file "~/_emacs/switchH2Cpp.el")
+
 ;;auto open files that are opened last time;
 (desktop-save-mode 1)
+
+;;emacs git
+(add-to-list 'load-path "~/_emacs/git-emacs/")
+(require 'git-emacs)
+
+
+;;undo Tree
+;;(load "undo-tree.el")
+(require 'undo-tree)
+;;(global-undo-tree-mode)
+
+;; hide comments
+(require 'hide-comnt)
+
+(ansi-color-for-comint-mode-on)
